@@ -1,0 +1,66 @@
+body {
+    background-color: #FBD000; /* backup kleur als de img niet werk*/
+    background: url("../img/bg_mario.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main > img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+section:first-of-type {
+    text-align: center;
+}
+
+section:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+section:nth-child(3) {
+    display: flex;
+    justify-content: center;
+}
+
+section:nth-child(2) img {
+    width: 200px;
+}
+
+section:last-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 2rem;
+    padding: 10px 25px;
+    line-height: 40px;
+    min-width: 150px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button img {
+    width: 100px;
+}
